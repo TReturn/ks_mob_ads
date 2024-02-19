@@ -1,1 +1,1 @@
-# ks_mob_ads
+# 快手广告SDK
