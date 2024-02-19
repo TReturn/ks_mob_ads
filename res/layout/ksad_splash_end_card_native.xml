@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_splash_end_card_native_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+      android:id="@+id/ksad_splash_end_card_native_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop" />
+
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:id="@+id/ksad_splash_end_card_native_dialog_root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/ksad_splash_endcard_bg_color">
+
+      <LinearLayout
+        android:id="@+id/ksad_splash_end_card_native_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+          android:layout_width="@dimen/ksad_splash_endcard_title_iconw"
+          android:layout_height="@dimen/ksad_splash_endcard_title_iconh"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/ksad_splash_endcard_title" />
+
+        <LinearLayout
+          android:id="@+id/ksad_splash_end_card_giftbox_view"
+          android:layout_width="@dimen/ksad_splash_endcard_gift_iconw"
+          android:layout_height="@dimen/ksad_splash_endcard_gift_iconh"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="7dp"
+          android:background="@drawable/ksad_splash_endcard_giftbox"
+          android:gravity="center_horizontal"
+          android:orientation="vertical">
+
+          <ImageView
+            android:id="@+id/ksad_ad_endcard_icon"
+            android:layout_width="@dimen/ksad_splash_endcard_app_iconw"
+            android:layout_height="@dimen/ksad_splash_endcard_app_iconh"
+            android:layout_marginTop="124dp" />
+
+          <TextView
+            android:id="@+id/ksad_ad_endcard_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/ksad_splash_endcard_name_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/ksad_ad_endcard_appversion"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:textColor="@color/ksad_splash_endcard_appversion_color"
+            android:textSize="10sp" />
+
+          <TextView
+            android:id="@+id/ksad_ad_endcard_appdesc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:textColor="@color/ksad_splash_endcard_appdesc_color"
+            android:textSize="16sp" />
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <com.kwad.components.core.widget.KsLogoView
+              android:id="@+id/ksad_ad_endcard_logo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginBottom="4dp"
+              android:layout_marginLeft="12dp"
+              android:background="@drawable/ksad_logo_bg_big_radius"
+              android:scaleX="0.8"
+              android:scaleY="0.8" />
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="14dp"
+              android:layout_centerInParent="true"
+              android:layout_gravity="center"
+              android:layout_marginTop="16dp"
+              android:orientation="horizontal">
+              <TextView
+                android:id="@+id/ksad_ad_introduction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:textColor="@color/ksad_splash_endcard_ompliance_color"
+                android:textSize="10sp" />
+
+              <TextView
+                android:id="@+id/ksad_ad_permission_text"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:textColor="@color/ksad_splash_endcard_ompliance_color"
+                android:textSize="10sp" />
+
+              <TextView
+                android:id="@+id/ksad_ad_privacy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:textColor="@color/ksad_splash_endcard_ompliance_color"
+                android:textSize="10sp" />
+            </LinearLayout>
+          </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:id="@+id/ksad_splash_endcard_actionbar"
+          android:layout_width="187dp"
+          android:layout_height="48dp"
+          android:layout_marginTop="6dp"
+          android:background="@drawable/ksad_splash_endcard_btn_bg"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/ksad_ad_btn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ksad_splash_endcard_title_color"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/ksad_ad_btn_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/ksad_splash_endcard_title_color"
+            android:textSize="10sp"
+            android:visibility="gone" />
+        </LinearLayout>
+
+        <com.kwad.components.ad.splashscreen.widget.CloseCountDownView
+          android:id="@+id/ksad_ad_endcard_close_root"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:layout_marginTop="14dp"
+          android:background="@drawable/ksad_splash_endcard_close_bg"
+          android:gravity="center" />
+
+      </LinearLayout>
+
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+    <TextView
+      android:id="@+id/ksad_ad_developer_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_marginBottom="12dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginRight="32dp"
+      android:gravity="center"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:textColor="@color/ksad_splash_endcard_developer_color"
+      android:textSize="10sp" />
+  </com.kwad.sdk.widget.KSFrameLayout>
